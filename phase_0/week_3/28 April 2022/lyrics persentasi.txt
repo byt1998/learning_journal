@@ -1,0 +1,27 @@
+aditya
+enggar krist
+mega mahara
+muhammad sanzabi
+rio armiga
+
+Kami adalah E-commerce baru, mencari kostumer pada data ini dan mempunyai beberapa label, yang mana label ini kita berusaha membuat strategi agar semua kostumer bisa setia pada E-commerce kami, berusaha membuat costumer spending score lebih dari >=49 
+dan jika spending score >= 49 kami berusaha untuk mempertahankannya berikut beberapa strateginya.
+Label 1: Menawarkan product high end yang bekerja sama pada product branded
+Label 2: Menawarkan fitur investasi legal, menawarkan promosi pada barang yang berkualitas
+Label 3 :   
+
+Kami adalah E-commerce baru, mencari kostumer pada data 
+ini dan mempunyai beberapa label, yang mana label ini 
+kami berusaha membuat strategi agar semua kostumer bisa 
+setia pada E-commerce kami, berusaha membuat costumer 
+spending score lebih dari >=49 dan jika spending score > 49 
+kami berusaha untuk mempertahankannya berikut beberapa 
+strateginya.
+
+Hacktive Mall
+
+- Label 0 : Menawarkan cashback dan promo gratis ongkir
+- Label 1 : Menawarkan product high end yang bekerja sama pada product branded dan membership (loyal point ditukar voucher dll)
+- Label 2 : Menawarkan fitur baru (contoh: investasi legal), menawarkan promosi pada barang yang berkualitas dengan tujuan menarik pasar
+- Label 3 : Menawarkan fitur kemudahan pembayaran (contoh: auto debet, notifikasi yang friendly, meningkatkan opsi pembayaran) dan promosi terhadap jenis produk yang sama
+- Label 4 : Menawarkan cashback dan fitur kredit (memberikan extra cashback jika menggunakan fitur kredit)

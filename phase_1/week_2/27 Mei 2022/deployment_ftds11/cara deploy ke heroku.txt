@@ -1,0 +1,7 @@
+heroku login -I
+heroku create <nama-app>
+git init
+git add .
+git commit -m "comment"
+heroku git:remote -a <nama-app>
+git push Heroku master

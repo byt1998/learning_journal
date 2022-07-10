@@ -1,0 +1,49 @@
+# Mendefinisikan pixel pada Image dengan 
+blurred_imageGy = skimage.filters.gaussian(gray, sigma=1.0)
+blurred_imageR = skimage.filters.gaussian(Red, sigma=1.0)
+blurred_imageG = skimage.filters.gaussian(Green, sigma=1.0)
+blurred_imageB = skimage.filters.gaussian(Blue, sigma=1.0)
+
+hist_red, bin_edges = np.histogram(blurred_imageR, bins=256, range=(0, 256))
+hist_green, bin_edges = np.histogram(blurred_imageG, bins=256, range=(0.0, 1.0))
+hist_blue, bin_edges = np.histogram(blurred_imageB, bins=256, range=(0.0, 1.0))
+hist_gray, bin_edges = np.histogram(blurred_imageGy, bins=256, range=(0.0,1.0))
+
+# mendefinisikan Threshold sama dengan 0.5 dari masing masing warna histogram
+t = 0.6
+binary_maskR = blurred_imageR > t
+binary_maskG = blurred_imageG > t
+binary_maskB = blurred_imageB > t
+binary_maskGy = blurred_imageGy > t
+
+fig, ax = plt.subplots()
+plt.plot(bin_edges[0:-1], hist_red)
+plt.title("Red color image Histogram")
+plt.xlabel("red scale value")
+plt.ylabel("pixels")
+plt.xlim(0, 1.0)
+plt.show()
+
+fig, ax = plt.subplots(ncols=2,figsize=(21,5))
+ax[0].imshow(blurred_imageR)
+ax[0].set_title('Red asli')
+ax[1].imshow(binary_maskR)
+ax[1].set_title('Threshold')
+
+t = skimage.filters.threshold_otsu(blurred_imageGy)
+print("Found automatic threshold t = {}.".format(t)) 
+
+fig, ax = plt.subplots()
+plt.plot(bin_edges[0:-1], hist_gray)
+plt.title("Green image Histogram")
+plt.xlabel("greenscale value")
+plt.ylabel("pixels")
+plt.xlim(0, 1.0)
+plt.show()
+
+fig, ax = plt.subplots()
+plt.imshow(binary_maskGy, cmap='gray')
+plt.show()
+
+t = skimage.filters.threshold_otsu(blurred_image)
+print("Found automatic threshold t = {}.".format(t)) 

@@ -1,0 +1,10 @@
+Deployment
+
+Research : Notebook.ipynb
+Engineering : Script.py
+
+
+Alur deployment?
+# Save model = riset di notbook ipynb
+# Load model
+# Script deployment = lewat Flask seperti web framework atau API (App Protocol Interface)
